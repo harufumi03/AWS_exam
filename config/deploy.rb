@@ -7,7 +7,7 @@ set :bundle_without, %w{test}.join(':')
 set :rbenv_version, '3.0.1'
 set :linked_dirs, %w{log tmp/pids tmp/cache tmp/sockets public/uploads}   
 set :keep_releases, 5   
-set :linked_files, %w{config/secrets.yml}
+set :linked_files, %w{config/secrets.yml .env}
 set :log_level, :info 
 
 after 'deploy:published', 'deploy:seed'   # 9
