@@ -21,7 +21,7 @@ gem 'jbuilder', '~> 2.7'
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-
+gem 'unicorn'
 # Use Active Storage variant
 gem 'image_processing', '~> 1.2'
 
@@ -44,6 +44,7 @@ group :development do
   gem "capistrano", "~> 3.10", require: false
   gem "capistrano-rails", "~> 1.6", require: false
   gem 'capistrano-rbenv', '~> 2.2'
+  gem 'capistrano3-unicorn'
 end
 
 group :test do
